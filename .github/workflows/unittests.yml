@@ -1,15 +1,26 @@
+<<<<<<< HEAD
 name: Python CI
 
 on:
   push:
     branches:
       - main
+=======
+name: Python Unit Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+>>>>>>> 6e81f9d (feat: add notebook and schema files)
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+<<<<<<< HEAD
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -22,3 +33,18 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+=======
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.9"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest pytest-cov
+    - name: Run tests with pytest
+      run: |
+        pytest --cov=src tests/
+>>>>>>> 6e81f9d (feat: add notebook and schema files)

@@ -1,3 +1,5 @@
+# Notebooks
+This directory contains Jupyter notebooks for exploration and prototyping.
 # Task 1: Data Scraping & Preprocessing — Comprehensive Documentation
 
 ## Overview
