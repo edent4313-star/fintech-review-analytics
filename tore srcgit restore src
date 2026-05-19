@@ -1,0 +1,17 @@
+[33mcommit 988c2c57350c70b2228389d7d201f281d14822f1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mTask-4[m[33m, [m[1;31morigin/Task-4[m[33m)[m
+Author: edent4313-star <edent4313@gmail.com>
+Date:   Tue May 19 06:05:11 2026 +0300
+
+    remove pyc files and ignore cache
+
+[33mcommit c3a14450a83b7da5b6d7a5d0326e176d60a47c8e[m
+Author: Habtamu Amsalu <habtamu.amsalu@hst-et.com>
+Date:   Sun May 17 17:01:45 2026 +0300
+
+    Clean project and ignore cache files
+
+[33mcommit 6ccf72f63a5a8c40fbcb9018d08147383b8cd97e[m
+Author: edent4313-star <edent4313@gmail.com>
+Date:   Thu May 14 14:03:05 2026 +0000
+
+    Initial project structure setup
