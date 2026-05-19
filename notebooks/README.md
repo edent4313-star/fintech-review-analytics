@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+# Notebooks
+This directory contains Jupyter notebooks for exploration and prototyping.
+=======
 # Task 1: Data Scraping & Preprocessing — Comprehensive Documentation
 
 ## Overview
@@ -183,3 +187,4 @@ data/raw/BOA_bank_reviews_clean_F.csv
 **Last Updated**: May 19, 2026
 **Data Period**: May 2025 – December 2025
 **Notes**: This README is intentionally focused on Task 1 scraping and preprocessing.
+>>>>>>> c3913aa965a2a33c6a61f6b8535aa07d09b11574
