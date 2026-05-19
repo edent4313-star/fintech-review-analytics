@@ -22,12 +22,47 @@ fintech-review-analytics/
    ```bash
    pip install -r requirements.txt
    ```
+<<<<<<< HEAD
 3. Run the data collection and preprocessing:
+=======
+3. Set up the PostgreSQL database (optional for database ingestion):
+   ```bash
+   psql -U postgres -c "CREATE DATABASE bank_reviews;"
+   psql -U postgres -d bank_reviews -f schema.sql
+   ```
+4. Install database drivers for Python if needed:
+   ```bash
+   pip install sqlalchemy psycopg2-binary
+   ```
+5. Run the data collection and preprocessing:
+>>>>>>> c3913aa965a2a33c6a61f6b8535aa07d09b11574
    ```bash
    python scripts/scrape_reviews.py
    python scripts/preprocess_data.py
    ```
 
+<<<<<<< HEAD
+=======
+## Database Schema and Setup
+The database schema is defined in `schema.sql` and supports two tables:
+- `banks`
+  - `bank_id` (PRIMARY KEY)
+  - `bank_name`
+  - `app_name`
+- `reviews`
+  - `review_id` (PRIMARY KEY)
+  - `bank_id` (foreign key to `banks`)
+  - `review_text`
+  - `rating`
+  - `review_date`
+  - `sentiment_label`
+  - `sentiment_score`
+  - `identified_theme`
+  - `source`
+
+This project includes notebook ingestion logic in `notebooks/Task 3.ipynb`, which loads review data into `banks` and `reviews` using SQLAlchemy.
+
+>>>>>>> c3913aa965a2a33c6a61f6b8535aa07d09b11574
 ## Task 1: Data Collection and Preprocessing
 
 ### Scraping Methodology
@@ -60,3 +95,7 @@ fintech-review-analytics/
 - Robust data loading with type checking and file existence verification.
 - Unit tests for text preprocessing and sentiment logic in the `tests/` directory.
 - Automated testing via GitHub Actions.
+<<<<<<< HEAD
+=======
+
+>>>>>>> c3913aa965a2a33c6a61f6b8535aa07d09b11574
