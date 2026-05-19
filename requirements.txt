@@ -1,7 +1,26 @@
+<<<<<<< HEAD
+google-play-scraper
+=======
+>>>>>>> c3913aa965a2a33c6a61f6b8535aa07d09b11574
 pandas
 numpy
 matplotlib
 seaborn
 scikit-learn
+<<<<<<< HEAD
+nltk
+textblob
+vaderSentiment
+transformers
+torch
+tqdm
+pytest
+pytest-cov
+flake8
+black
+psycopg2
+sqlalchemy
+=======
 pytest
 jupyter
+>>>>>>> c3913aa965a2a33c6a61f6b8535aa07d09b11574
